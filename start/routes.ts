@@ -35,7 +35,7 @@ router.get('/integrations', [IntegrationsController, 'get']).use(
   })
 )
 
-router.delete('/integrations/:id', [IntegrationsController, 'delete']).use(
+router.delete('/integrations', [IntegrationsController, 'delete']).use(
   middleware.auth({
     guards: ['api'],
   })
